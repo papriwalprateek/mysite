@@ -1,0 +1,62 @@
+
+<div style = "margin-left:200px;margin-top:100px">
+<div style="margin-top:8%;margin-left:65%;position:fixed;">
+<a style = "color:#666;" class="experience"><div id = "navigation">Experience
+</div></a>
+<a style = "color:#666;" class="project"><div id = "navigation">Projects
+</div></a>
+<a style = "color:#666;" class="contact"><div id = "navigation">Contact
+</div></a>
+</div>
+
+<div style="font-family:BentoSans;font-size:2.8em;color:#ccc;">Hi there,</div>
+<div style="font-family:BentoSans;font-size:2.8em;color:#9c8;">I'm Prateek</div>
+<div style = "width:600px;margin-top:20px;font-family:BentoSans;font-size:1.2em;color:#666;">Final year undergraduate at <a target = "_blank" href="http://www.iitd.ac.in/">IIT Delhi</a>. Growth hacker at <a href="http://www.daqwest.com" target="_blank">DaQwest</a>.</div>
+<div>
+<div id = "work" style="padding-top:50px;margin-top:500px;font-family:BentoSans;font-size:2.4em;color:#9c8;margin-bottom:20px;">Experience</div>
+
+<div id="tiles">
+Growth hacker at DaQwest
+</div>
+<div id="tiles">
+Software Engineering Intern at Samsung Research
+</div>
+<div id="tiles">
+Google Summer Of Code 2012
+</div>
+
+</div>
+
+<div id = "project" style="margin-top:800px;margin-bottom:800px;font-family:BentoSans;font-size:2.4em;color:#9c8;">Projects</div>
+<div>
+</div>
+
+<div id = "contact" style="margin-top:500px;margin-bottom:800px;font-family:BentoSans;font-size:2.4em;color:#9c8;">Contact</div>
+<div>
+</div>
+
+</div>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $(".experience").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#work").offset().top
+                    }, 1800);
+            });
+            $(".contact").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#contact").offset().top
+                    }, 2000);
+            });
+            $(".project").click(function (){
+                    $('html, body').animate({
+                        scrollTop: $("#project").offset().top
+                    }, 2000);
+            });
+
+        });
+    </script>
