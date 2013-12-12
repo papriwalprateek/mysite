@@ -3097,3 +3097,10 @@ Served asset /welcome.js - 200 OK (1ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-30 10:02:41 +0530
 Served asset /application.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (214.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("schema_migrations")[0m
+  [1m[35m (223.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (31.8ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
