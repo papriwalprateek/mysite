@@ -3104,3 +3104,41 @@ Connecting to database specified by database.yml
   [1m[35m (223.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
   [1m[35m (31.8ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/" for 127.0.0.1 at 2013-12-12 13:40:05 +0530
+Connecting to database specified by database.yml
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Compiled jquery.js  (29ms)  (pid 15399)
+Compiled jquery_ujs.js  (0ms)  (pid 15399)
+Compiled application.js  (70ms)  (pid 15399)
+Completed 200 OK in 152ms (Views: 151.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-12-12 13:40:06 +0530
+Served asset /application.css - 200 OK (6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2013-12-12 13:40:06 +0530
+Served asset /custom.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-12-12 13:40:06 +0530
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2013-12-12 13:40:06 +0530
+Served asset /welcome.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-12-12 13:40:06 +0530
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-12-12 13:40:06 +0530
+Served asset /application.js - 200 OK (5ms)
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2013-12-12 13:40:06 +0530
+Served asset /welcome.js - 200 OK (2ms)
