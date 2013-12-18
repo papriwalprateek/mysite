@@ -1,4 +1,4 @@
-a {color:rgb(195,221,130);text-decoration:none;}
+a {text-decoration:none;}
 #navigation{
 font-family:BentoSans;
 font-size:1.2em;
@@ -10,8 +10,8 @@ cursor:pointer;
 color:#fff;
 }
 
-id#nav{
-color:#666;
+div#nav{
+color:#aaa;
 }
 
 div#tiles{
@@ -24,6 +24,6 @@ height:120px;
 padding:10px;
 line-height:1.6em;
 font-size:15px;
-background-color:#bbb;
+background-color:#aaa;
 position:relative;
 }

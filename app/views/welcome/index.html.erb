@@ -1,11 +1,13 @@
 
 <div style = "margin-left:200px;margin-top:100px">
 <div style="margin-top:8%;margin-left:65%;position:fixed;">
-<a style = "color:#666;" class="experience"><div id = "navigation">Experience
+<a style = "color:#aaa;" ><div class = "home" id = "navigation">Home
 </div></a>
-<a style = "color:#666;" class="project"><div id = "navigation">Projects
+<a style = "color:#aaa;" ><div class="experience" id = "navigation">Experience
 </div></a>
-<a style = "color:#666;" class="contact"><div id = "navigation">Contact
+<a style = "color:#aaa;" ><div class="project" id = "navigation">Projects
+</div></a>
+<a style = "color:#aaa;" ><div class="contact" id = "navigation">Contact
 </div></a>
 </div>
 
@@ -27,14 +29,44 @@ Google Summer Of Code 2012
 
 </div>
 
-<div id = "project" style="margin-top:800px;margin-bottom:800px;font-family:BentoSans;font-size:2.4em;color:#9c8;">Projects</div>
-<div>
+<div id = "project" style="padding-top:50px;margin-top:700px;margin-bottom:20px;font-family:BentoSans;font-size:2.4em;color:#9c8;">Projects</div>
+<div style="width:900px;">
+<div id="tiles">
+Building Structured and Linked Data
+</div>
+<div id="tiles">
+Social Network Analytics Dashboard
+</div>
+<div id="tiles">
+Automatic Mail Archiver
+</div>
+<div id="tiles">
+Simulation of Voice Electronic Medical Record
+</div>
+<div id="tiles">
+Temporal Pattern of Rainfall
+</div>
+<div id="tiles">
+MP Track of Lok Sabha
+</div>
+<div id="tiles">
+Intelligent Toll Collection System</div>
+<div id="tiles">
+Simple Domain Cralwer
+</div>
+<div id="tiles">
+Amazon Book Analytics
 </div>
 
-<div id = "contact" style="margin-top:500px;margin-bottom:800px;font-family:BentoSans;font-size:2.4em;color:#9c8;">Contact</div>
-<div>
+
 </div>
 
+<div id = "contact" style="margin-bottom:20px;padding-top:50px;margin-top:900px;font-family:BentoSans;font-size:2.4em;color:#9c8;">Contact</div>
+<div style="margin-bottom:700px;width:600px;">
+	<a href = "https://www.facebook.com/papriwalprateek" target = "_blank" style = "color:#888;font-size:1.4em;">Facebook</a> | <a href = "http://www.linkedin.com/pub/prateek-papriwal/35/481/912" style = "color:#888;font-size:1.4em;" target="_blank">Linkedin</a>  |  <a style = "color:#888;font-size:1.4em;" href = "https://twitter.com/prateek240" target="_blank">Twitter</a>  |  <a style = "color:#888;font-size:1.4em;" href="https://github.com/papriwalprateek" target="_blank">Github</a>
+	<br>
+	<p style="color:#888;font-size:1.2em;">or mail me at papriwalprateekATgmailDOTcom</p>
+</div>
 </div>
 
 
@@ -42,20 +74,33 @@ Google Summer Of Code 2012
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     <script>
         $(document).ready(function (){
+            $(".home").click(function (){
+					$('div#navigation').css({'color':'#aaa','background-color':'#fff'});
+ 	           		$(this).css({'color':'#fff','background-color':'#aaa'});
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 1800);
+            });
             $(".experience").click(function (){
+					$('div#navigation').css({'color':'#aaa','background-color':'#fff'});
+ 	           		$(this).css({'color':'#fff','background-color':'#aaa'});
                     $('html, body').animate({
                         scrollTop: $("#work").offset().top
                     }, 1800);
             });
             $(".contact").click(function (){
+					$('div#navigation').css({'color':'#aaa','background-color':'#fff'});
+ 	           		$(this).css({'color':'#fff','background-color':'#aaa'});
                     $('html, body').animate({
                         scrollTop: $("#contact").offset().top
-                    }, 2000);
+                    }, 1800);
             });
             $(".project").click(function (){
+					$('div#navigation').css({'color':'#aaa','background-color':'#fff'});
+ 	           		$(this).css({'color':'#fff','background-color':'#aaa'});                    
                     $('html, body').animate({
                         scrollTop: $("#project").offset().top
-                    }, 2000);
+                    }, 1800);
             });
 
         });
